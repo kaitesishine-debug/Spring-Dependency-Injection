@@ -16,6 +16,7 @@ public class NotificationService {
         this.messageService = messageService;
     }
 
+    // Sends a notification through the injected message service.
     public void sendNotification(String message)  {
         messageService.sendMessage(message);
     }
