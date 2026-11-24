@@ -17,6 +17,7 @@ public class MainApplication {
         NotificationService notificationService =
                 context.getBean(NotificationService.class);
 
+        System.out.println("Testing Spring Dependencies Injection...");
         //Send a notification
         notificationService.sendNotification("Welcome to Spring Dependency Injection!");
 
