@@ -3,6 +3,9 @@ package com.shine.notification;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+/**
+ * Handles notifications by using an injection message service.
+ */
 @Component
 public class NotificationService {
 
@@ -13,6 +16,7 @@ public class NotificationService {
         this.messageService = messageService;
     }
 
+    // Sends a notification through the injected message service.
     public void sendNotification(String message)  {
         messageService.sendMessage(message);
     }
